@@ -1,17 +1,14 @@
 {
   "name": "admin",
   "version": "0.0.1",
-  "private": true,
   "scripts": {
-    "dev": "vite --host --mode development",
-    "build": "NODE_ENV=production vite build",
-    "build:dev": "NODE_ENV=development vite build --mode development",
-    "start": "NODE_ENV=production vite preview --host",
-    "start:dev": "NODE_ENV=development vite preview --host --mode development"
+    "dev": "vite --host --mode development --port 3001",
+    "build": "vite build",
+    "build:dev": "vite build --mode development",
+    "start": "vite preview --host",
+    "start:dev": "vite preview --host --mode development"
   },
   "dependencies": {
-    "@demandcluster/core-ui": "workspace:*",
-    "@demandcluster/merchant-ui": "workspace:*",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@mui/material": "^5.4.2",

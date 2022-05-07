@@ -3,7 +3,11 @@
   "version": "0.0.1-dev",
   "private": true,
   "description": "Admin UI for Mailchimp Open Commerce",
-  "keywords":["moc","open commerce","reaction"],
+  "keywords": [
+    "moc",
+    "open commerce",
+    "reaction"
+  ],
   "license": "GPL-3.0",
   "author": "DemandCluster <devops@demandcluster.com>",
   "workspaces": [
@@ -12,7 +16,7 @@
   ],
   "scripts": {
     "build": "turbo run build -vvv",
-    "build:admin": "turbo run build --scope=admin --include-dependencies -vvv",
+    "build:admin": "turbo run build --filter=admin -vvv",
     "dev": "turbo run dev --no-cache --parallel",
     "dev:storybook-admin": "turbo run dev --no-cache --parallel --scope=storybook-admin",
     "lint": "turbo run lint",
@@ -21,7 +25,11 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
+    "@codedependant/semantic-release-docker": "^4.1.0",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
     "prettier": "^2.5.1",
+    "semantic-release": "^19.0.2",
     "turbo": "^1.1.2"
   },
   "engines": {

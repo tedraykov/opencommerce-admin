@@ -1,9 +1,10 @@
-import {FC, lazy, Suspense, useMemo} from "react";
+import {FC, lazy, Suspense} from "react";
 import { HelmetProvider } from "react-helmet-async";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { SnackbarProvider } from "notistack";
 
 import "platform/config/i18n";
+import env from "platform/config";
 import {UIProvider} from "platform/context/UIContext";
 import AuthGraphQLProvider from "platform/context/AuthGraphQLContext";
 import snackbarPosition from "platform/utils/getSnackbarPosition";
@@ -18,6 +19,7 @@ const Login = lazy(() => import("platform/components/auth/Login"));
 const Signup = lazy(() => import("platform/components/auth/Signup"));
 
 const App: FC = () => {
+  console.log(env);
   return (
     <ThemeProvider>
       <BrowserRouter>
