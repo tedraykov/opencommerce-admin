@@ -12,8 +12,14 @@ jobs:
       uses: cycjimmy/semantic-release-action@v3
       with:
         semantic_version: 19.0.2
+        extra_plugins: |
+          @semantic-release/changelog
+          @codedependant/semantic-release-docker
+          @semantic-release/commit-analyzer
+          @semantic-release/git
+          @semantic-release/release-notes-generator
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         DOCKER_REGISTRY_PASSWORD: ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
         DOCKER_REGISTRY_USER: ${{ secrets.DOCKER_REGISTRY_USER }}
-        
+
