@@ -11,6 +11,7 @@ module.exports = {
         }],
         ['@codedependant/semantic-release-docker', {
             dockerTags: ['{{version}}'],
+            dockerProject: 'tedraykov',
             dockerArgs: {
                 API_TOKEN: true,
                 VITE_PUBLIC_GRAPHQL_API_URL_HTTP: "https://api.treble.bg/graphql",
