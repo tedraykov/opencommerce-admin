@@ -1,7 +1,8 @@
 {
   "name": "opencommerce-admin",
   "version": "0.0.1-dev",
-  "private": true,
+  "private": false,
+  "repository": "git@github.com:tedraykov/opencommerce-admin.git",
   "description": "Admin UI for Mailchimp Open Commerce",
   "keywords": [
     "moc",
