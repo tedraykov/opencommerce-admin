@@ -1,5 +1,6 @@
 module.exports = {
     branches: ['trunk'],
+    repositoryUrl: "git@github.com:tedraykov/opencommerce-admin.git",
     plugins: [
         "@semantic-release/commit-analyzer",
         "@semantic-release/release-notes-generator",

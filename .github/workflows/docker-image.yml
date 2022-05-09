@@ -8,6 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+    - name : Print envs
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        DOCKER_REGISTRY_PASSWORD: ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
+        DOCKER_REGISTRY_USER: ${{ secrets.DOCKER_REGISTRY_USER }}
+      run : echo $GITHUB_TOKEN && echo $DOCKER_REGISTRY_PASSWORD && echo $DOCKER_REGISTRY_USER
     - name: Semantic Release
       uses: cycjimmy/semantic-release-action@v3
       with:
