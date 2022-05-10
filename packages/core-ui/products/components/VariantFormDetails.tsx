@@ -155,9 +155,9 @@ const VariantFormDetails: FC = () => {
             />
             <ControlledTextField
               control={control}
-              name="height"
+              name="weight"
               type="number"
-              label={t("productVariant.height", "Height")}
+              label={t("productVariant.wight", "Weight")}
               placeholder="0"
             />
             <LoadingButton
