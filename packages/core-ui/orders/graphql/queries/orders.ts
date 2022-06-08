@@ -18,6 +18,15 @@ query ordersQuery($shopIds: [ID], $filters: OrderFilterInput, $first: Connection
       }
       fulfillmentGroups {
         status
+          data {
+            ... on ShippingOrderFulfillmentGroupData {
+              shippingAddress {
+                fullName
+                city
+                postal
+              }
+            }
+          }  
       }
       summary {
         total {
