@@ -55,9 +55,6 @@ export const DevProvider: FC = ({children}) => {
           display="flex"
           flexDirection="column"
           alignItems="end"
-          sx={{
-            pointerEvents: "none"
-          }}
         >
           <ButtonBase
             onClick={() => setExpanded(!expanded)}

@@ -57,7 +57,7 @@ const FulfillmentGroupSummary: FC<FulfillmentGroupSummaryProps> = ({fulfillmentG
                 <Typography>Discount total:</Typography>
               </TableCell>
               <TableCell>
-                <Typography textAlign="right">{fulfillmentGroup.summary.discountTotal.displayAmount}</Typography>
+                <Typography textAlign="right">-{fulfillmentGroup.summary.discountTotal.displayAmount}</Typography>
               </TableCell>
             </TableRow>
           )

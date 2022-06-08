@@ -123,6 +123,10 @@ export const orderCommonFragment = gql`
           amount
           displayAmount
         }
+        discountTotal {
+          amount
+          displayAmount
+        }
         itemTotal {
           amount
           displayAmount
@@ -202,6 +206,10 @@ export const orderCommonFragment = gql`
     }
     status
     summary {
+      discountTotal {
+        amount
+        displayAmount
+      }
       fulfillmentTotal {
         amount
         displayAmount

@@ -13,6 +13,7 @@ const FulfillmentGroupItem: FC<FulfillmentGroupItemProps> = ({item}) => {
         sx={{
           width: "4rem",
           height: "fit-content",
+          marginTop: 1,
           borderRadius: 2,
           overflow: "hidden",
           "&>img": {

@@ -74,7 +74,7 @@ const OrderSummary: FC = () => {
                       <Typography>Discount total:</Typography>
                     </TableCell>
                     <TableCell>
-                      <Typography textAlign="right">{order.summary.discountTotal.displayAmount}</Typography>
+                      <Typography textAlign="right">-{order.summary.discountTotal.displayAmount}</Typography>
                     </TableCell>
                   </TableRow>
                 )
